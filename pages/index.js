@@ -1,4 +1,7 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
@@ -23,18 +26,34 @@ margin: auto 10%;
 }
 `;
 
-
-
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>AluraQuiz - Modelo Base</title>
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
             <h1>The legend of tennis</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Prova de Quiz de tennis</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo um submit');
+            }}>
+              <input placeholder="Diz ae seu nome"    onChange={function (infosDoEvento) {
+                  setName(infosDoEvento.target.value);
+                }}/>
+              <button
+                type="submit" disabled={name.length === 0}>
+                Jogar {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Widget>
@@ -45,9 +64,9 @@ export default function Home() {
             <p>Prova de Quiz de tennis</p>
           </Widget.Content>
         </Widget>
-        <Footer/>
+        <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="http://github.com/correa96cl"/>
+      <GitHubCorner projectUrl="http://github.com/correa96cl" />
     </QuizBackground>
   );
 }
