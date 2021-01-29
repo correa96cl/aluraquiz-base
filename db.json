@@ -1,28 +1,30 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+    "bg": "https://images.squarespace-cdn.com/content/v1/5e7cf28eb6076a77761c684e/1588022230066-JBS85300E6EBSM1792Q7/ke17ZwdGBToddI8pDm48kFTEgwhRQcX9r3XtU0e50sUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcjVvFZn3_1TpSINbj1p15LLAjcj6UHNkQOuDz3gO52lBvccB2t33iJEaqs_Hdgp_g/Website+Background+3.png?format=2500w",
     "title": "Quiz do Tennis",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "description": "Teste sua capacidade de conhecer o deporte branco",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/ZgSt8kHA7ulZ4DCtc5/giphy.gif",
+        "title": "Quem foi o finalista masculino do US OPEN 1998?",
+        "description": "Essa não da para lembrar hein",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Greg Rusedski",
+          "Andre Agassi",
+          "Patrick Rafter",
+          "Mark Phillipoussis"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://media.giphy.com/media/3o7523R8IgzffPPRSw/giphy.gif",
+        "title": "Quem foi o primeiro tenista da America latina em ser número 1 del ranking ATP?",
         "description": "Faz tempo em haha",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Gustavo Kuerten",
+           "Marcelo Rios",
+           "Guillermo Vilas",
+           "Nicolas Lappenti"
         ]
       }
     ],
